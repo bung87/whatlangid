@@ -1,15 +1,11 @@
 from setuptools import setup
-
-with open('README.md') as f:
-    readme = f.read()
-with open('LICENSE') as f:
-    license = f.read()
+import io
 
 setup(
     name='whatlangid',
     version='1.0.2',
     description='Lightning Fast Language Prediction powered by FastText and langid.',
-    long_description=readme,
+    long_description=io.open('README.md', 'r', encoding='utf-8').read(),
     long_description_content_type="text/markdown",
     author='bung87',
     url='https://github.com/bung87/whatlangid',
@@ -22,7 +18,7 @@ setup(
     python_requires='>=3',
     install_requires=['fasttext>=0.8.22', 'langid>=1.1.6'],
     test_suite='tests.test_predict_lang.suite',
-    license=license,
+    license='Apache License, Version 2.0',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
