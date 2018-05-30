@@ -7,8 +7,8 @@ with open('LICENSE') as f:
 
 setup(
     name='whatlangid',
-    version='1.0.1',
-    description='Lightning Fast Language Prediction powered by FastText.',
+    version='1.0.2',
+    description='Lightning Fast Language Prediction powered by FastText and langid.',
     long_description=readme,
     long_description_content_type="text/markdown",
     author='bung87',
