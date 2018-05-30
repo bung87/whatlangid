@@ -4,11 +4,11 @@
 
 This project is build on top of [whatthelang](https://github.com/indix/whatthelang) and [langid](https://github.com/saffsd/langid.py)
 
-The dependency([pyfasttext](https://github.com/vrasneur/pyfasttext)) of whatthelang is not facebook official release.
+The dependency([pyfasttext](https://github.com/vrasneur/pyfasttext)) of **whatthelang** is not facebook official release.
 
-This project dependence on the official release [https://github.com/facebookresearch/fastText.git](https://github.com/facebookresearch/fastText.git)
+This project depends on the official release [https://github.com/facebookresearch/fastText.git](https://github.com/facebookresearch/fastText.git)
 
-for now it's not release on pypi,so you need `--process-dependency-links` arg when using pip.
+The **fastText** for now is not release on pypi,so you need `--process-dependency-links` arg when using pip.
 
 # Why this project exist?
 
