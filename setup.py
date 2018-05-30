@@ -18,6 +18,7 @@ setup(
     dependency_links=[
         "git+https://github.com/facebookresearch/fastText.git@master#egg=fasttext-0.8.22",
     ],
+    python_requires='>=3',
     install_requires=['fasttext>=0.8.22', 'langid>=1.1.6'],
     test_suite='tests.test_predict_lang.suite',
     license=license,
@@ -27,6 +28,7 @@ setup(
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
