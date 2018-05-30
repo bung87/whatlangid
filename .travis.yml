@@ -1,6 +1,5 @@
 language: python
 python:
-- '2.7'
 - '3.4'
 - '3.5'
 - '3.6'
@@ -17,11 +16,9 @@ install:
 script:
 - python setup.py test
 deploy:
-  matrix:
-  - provider: pypi
+  provider: pypi
     on:
       tags: true
-      python: 2.7
     user: bung87
     password:
       secure: gWuhEaZTPR7Ffbu4AnG6Hfm7NwqZrfWO9jD9y7m8Pm07TuTBb9+S5OJOw4Yt1/MU/jxVJ6x/G38efEYfJq4xMyuhj8qG5mFvFFvO6HOwnujdkNEv0hft4gv/9G8m6DfUKOxl1JKYcJFfSF2ClMIaLeMIaNb0lpi9/zJJ0OYibsGJDN+W7SMKJZyo7GptwMpyZttT6NxlhLrrOxbSxsSyQqXvJ7rdzvBn4T/qtsldFrryVGw3oVJuLciBrjnRg+T6Y3WChted76KTsfXAj9Z2M9wIA06I6NzZ0QtLuE/mj0Smq2TNzFP/OZns4Yhws+KQrRRB30YyRqwGFQNGJ+AkS6YwPbaYhCHZWbzyydyw7ScecR0KPc4QhmOKrWtMpZJgCNQjBfSwyndjjg7o7WI1PLoYTZKtOohcH29Jgd/Shd6XIeHc1yVYC/vNTaegcvNjueXU2Is6nDUdS462qJqNef7gZQlSXpKQHT8sOMRTDC7Z9qS4X+RpN5uEATThFX1WpMkaSm5Th3+mnGD5IdJUyqfxZSYfHYloK+3bRVqMT5xN8X1HRPccngk957h1CqXHQBwpzTb93slcGZa5wu7269fYtlYlnqEtJ8gno1v1YDMMh0c/bb72IH6xzKxIIwP7cYxGkdEiPeGcLe0jigPYxsji/zNue1FfBXRTfcBdUkI=
