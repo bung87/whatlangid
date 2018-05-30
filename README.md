@@ -1,6 +1,7 @@
 # whatlangid
 
-[![Build Status](https://travis-ci.org/bung87/whatlangid.svg?branch=master)](https://travis-ci.org/bung87/whatlangid)
+[![Build Status](https://travis-ci.org/bung87/whatlangid.svg?branch=master)](https://travis-ci.org/bung87/whatlangid)  [![PyPI](https://img.shields.io/pypi/v/whatlangid.svg)](https://pypi.python.org/pypi/whatlangid)
+
 
 This project is build on top of [whatthelang](https://github.com/indix/whatthelang) and [langid](https://github.com/saffsd/langid.py)
 
