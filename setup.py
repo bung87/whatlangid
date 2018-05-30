@@ -1,9 +1,15 @@
 from setuptools import setup
+import io
+try:
+    long_description = io.open('README', encoding="utf-8").read()
+except Exception:
+    long_description = io.open('README.md', encoding="utf-8").read()
 
 setup(
     name='whatlangid',
-    version='1.0.5',
+    version='1.0.6',
     description='Lightning Fast Language Prediction powered by FastText and langid.',
+    long_description=long_description,
     author='bung87',
     url='https://github.com/bung87/whatlangid',
     keywords='language detection library',
