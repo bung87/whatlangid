@@ -5,6 +5,7 @@ import re
 import sys
 import collections
 import langid
+from .exceptions import InsufficientError
 
 if sys.version_info[0] >= 3:
     unicode = str
@@ -57,7 +58,7 @@ class WhatLangId(object):
         if isinstance(inp, unicode):
             cleaned_txt = self._clean_up(inp)
             if cleaned_txt == "":
-                raise ValueError("Not enough text to predict language")
+                raise InsufficientError("Not enough text to predict language")
             pred = self._predict(cleaned_txt)
             if len(pred) == 0:
                 return self.unknown
