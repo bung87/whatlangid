@@ -1,6 +1,8 @@
 language: python
 python:
 - '2.7'
+- '3.4'
+- '3.5'
 - '3.6'
 sudo: false
 before_install:
@@ -12,14 +14,14 @@ before_install:
 - g++ --version
 install:
 - pip install --process-dependency-links .
-
 script:
-- python whatlangid/test_predict_lang.py
+- python setup.py test
 deploy:
-- provider: pypi
-  on:
-    tags: true
-    python: 2.7
-  user: indix
-  password:
-    secure: n7ogrl0fYyo1u3YfD45Y9LWgtpdi+NVQl4Wv60AP+ziTI42t+LSaOB6dAJVnSG/MxsE5rW+78ylkgOjvwEYknWoqURV7j7/OTie775tcjSgpw2pY79TW2P3qD7+h+6wyFXVWkPoBGQanWSXlQtcreaxIzWP1MPVq8/LJaL+i8MdTcpOQCAWyiJb0xIznlGQDFSgF4kx9pxaqJck77DCZW3+/LtUbw+d3+o+wBdwQfC71HvS/RTmtQXygskE3lqZFS0t8Cq38EvH5p5WsYu/XqescQzCKDUJmxBNCh8875cwcv3xCPMIQlYSzIPzVElDpDg4iAEfZkvnd37j7PbOhvaiLS1AKl3yl0UOghnz5m315/9c4/XNkGKOBarTHb6AiJJopP+zhKku0QbQ/NykXnGwt9RjNIYLWKDAMuNs8+uoFyrdLsMpHWtVt8KhL4QxELdO93hU8NiQwSmsimhpcC4/KMDg6gYeAl/hj72DCD8P1bKAszRWOTAJyurvBknpmCIGYwO+jxOh6Umu8mkmFmTBbYmdOKA4TIoZ8AVr+1/sk6DTCprbdvQPdArI67cjLhhvPuNWdIftVfUhM2Jpe2N0ksltFBRcVImxUMWNOBLsPzkzyISK9HuTcgv915MrJmjP6/anM/1tXCctYsPDtEbm3T7N79tk7q5EDdB/UMio=
+  matrix:
+  - provider: pypi
+    on:
+      tags: true
+      python: 2.7
+    user: bung87
+    password:
+      secure: gWuhEaZTPR7Ffbu4AnG6Hfm7NwqZrfWO9jD9y7m8Pm07TuTBb9+S5OJOw4Yt1/MU/jxVJ6x/G38efEYfJq4xMyuhj8qG5mFvFFvO6HOwnujdkNEv0hft4gv/9G8m6DfUKOxl1JKYcJFfSF2ClMIaLeMIaNb0lpi9/zJJ0OYibsGJDN+W7SMKJZyo7GptwMpyZttT6NxlhLrrOxbSxsSyQqXvJ7rdzvBn4T/qtsldFrryVGw3oVJuLciBrjnRg+T6Y3WChted76KTsfXAj9Z2M9wIA06I6NzZ0QtLuE/mj0Smq2TNzFP/OZns4Yhws+KQrRRB30YyRqwGFQNGJ+AkS6YwPbaYhCHZWbzyydyw7ScecR0KPc4QhmOKrWtMpZJgCNQjBfSwyndjjg7o7WI1PLoYTZKtOohcH29Jgd/Shd6XIeHc1yVYC/vNTaegcvNjueXU2Is6nDUdS462qJqNef7gZQlSXpKQHT8sOMRTDC7Z9qS4X+RpN5uEATThFX1WpMkaSm5Th3+mnGD5IdJUyqfxZSYfHYloK+3bRVqMT5xN8X1HRPccngk957h1CqXHQBwpzTb93slcGZa5wu7269fYtlYlnqEtJ8gno1v1YDMMh0c/bb72IH6xzKxIIwP7cYxGkdEiPeGcLe0jigPYxsji/zNue1FfBXRTfcBdUkI=
