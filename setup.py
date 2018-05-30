@@ -1,17 +1,9 @@
 from setuptools import setup
-import io
-try:
-    import pypandoc
-    long_description = pypandoc.convert('README.md', 'rst')
-except(IOError, ImportError):
-    long_description = io.open('README.md', 'r', encoding='utf-8').read()
 
 setup(
     name='whatlangid',
-    version='1.0.4',
+    version='1.0.5',
     description='Lightning Fast Language Prediction powered by FastText and langid.',
-    long_description=long_description,
-    long_description_content_type="text/markdown",
     author='bung87',
     url='https://github.com/bung87/whatlangid',
     keywords='language detection library',
