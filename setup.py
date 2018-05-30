@@ -10,6 +10,7 @@ setup(
     version='1.0.1',
     description='Lightning Fast Language Prediction powered by FastText.',
     long_description=readme,
+    long_description_content_type="text/markdown",
     author='bung87',
     url='https://github.com/bung87/whatlangid',
     keywords='language detection library',
