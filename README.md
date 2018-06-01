@@ -58,6 +58,13 @@ Batch Prediction is also supported
 ['ml','hi','en']
 ```
 
+## Advanced usage
+
+`wtl = WhatLangId(custom_model=abs_path)`
+
+use bin version model which is faster and slightly more accurate, but has a file size of 126MB
+
+`python -m whatlangid.use_bin`
 
 ## Supported Languages
 

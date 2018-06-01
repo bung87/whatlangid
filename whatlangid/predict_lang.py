@@ -6,7 +6,7 @@ import sys
 import collections
 import langid
 from .exceptions import InsufficientError
-
+from .use_bin import MODEL_FILE_BIN
 if sys.version_info[0] >= 3:
     unicode = str
 
@@ -22,9 +22,12 @@ def flatten(l):
 
 
 class WhatLangId(object):
-    def __init__(self):
+    def __init__(self, custom_model=None):
         langid.classify("")  # force initialize
-        self.model_file = MODEL_FILE
+        if custom_model:
+            self.model_file = MODEL_FILE
+        else:
+            self.model_file = MODEL_FILE_BIN if path.exists(MODEL_FILE_BIN) else MODEL_FILE
         self.model = load_model(MODEL_FILE)
         self.unknown = None
 
