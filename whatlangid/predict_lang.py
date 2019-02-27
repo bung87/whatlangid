@@ -28,7 +28,7 @@ class WhatLangId(object):
             self.model_file = MODEL_FILE
         else:
             self.model_file = MODEL_FILE_BIN if path.exists(MODEL_FILE_BIN) else MODEL_FILE
-        self.model = load_model(MODEL_FILE)
+        self.model = load_model(self.model_file)
         self.unknown = None
 
     def _clean_up(self, txt):
