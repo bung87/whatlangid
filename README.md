@@ -25,9 +25,16 @@ $ pip install -r requirements.txt
 
 ## Install
 
+from github  
 
 ```bash
-$ pip install  --process-dependency-links git+https://github.com/bung87/whatlangid
+$ pip install  --extra-index-url=https://test.pypi.org/simple/ git+https://github.com/bung87/whatlangid  
+```
+
+from pypi  
+
+```bash
+$ pip install  --extra-index-url=https://test.pypi.org/simple/ whatlangid  
 ```
 
 
