@@ -1,5 +1,5 @@
 from __future__ import division, unicode_literals
-from fastText import load_model
+from fasttext import load_model
 from os import path
 import re
 import sys

@@ -12,7 +12,7 @@ before_install:
 - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 1
 - g++ --version
 install:
-- pip install --process-dependency-links .
+- pip install .
 script:
 - python setup.py test
 deploy:

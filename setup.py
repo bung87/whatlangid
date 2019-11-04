@@ -8,7 +8,7 @@ except Exception:
 
 setup(
     name='whatlangid',
-    version='1.0.9',
+    version='1.0.10',
     description='Lightning Fast Language Prediction powered by FastText and langid.',
     long_description=long_description,
     author='bung87',
@@ -17,7 +17,7 @@ setup(
     packages=['whatlangid'],
     include_package_data=True,
     python_requires='>=3',
-    install_requires=['fasttext>=0.8.22', 'langid>=1.1.6', 'tqdm>=4.23.3', 'requests>=2.18.4'],
+    install_requires=['fasttext>=0.9.1', 'langid>=1.1.6', 'tqdm>=4.23.3', 'requests>=2.18.4'],
     test_suite='tests.test_predict_lang.suite',
     license='Apache License, Version 2.0',
     classifiers=[
