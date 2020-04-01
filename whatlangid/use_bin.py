@@ -8,7 +8,7 @@ if __name__ == "__main__":
     import requests
     from tqdm import tqdm
 
-    BIN_URL = "https://s3-us-west-1.amazonaws.com/fasttext-vectors/supervised_models/lid.176.bin"
+    BIN_URL = "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin"
 
     dirs = path.dirname(MODEL_FILE_BIN)
     if not path.exists(dirs):
