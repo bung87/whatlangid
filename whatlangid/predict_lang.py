@@ -25,7 +25,7 @@ class WhatLangId(object):
     def __init__(self, custom_model=None):
         langid.classify("")  # force initialize
         if custom_model:
-            self.model_file = MODEL_FILE
+            self.model_file = custom_model
         else:
             self.model_file = MODEL_FILE_BIN if path.exists(MODEL_FILE_BIN) else MODEL_FILE
         self.model = load_model(self.model_file)
