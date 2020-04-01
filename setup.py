@@ -8,7 +8,7 @@ except Exception:
 
 setup(
     name='whatlangid',
-    version='1.0.10',
+    version='1.0.11',
     description='Lightning Fast Language Prediction powered by FastText and langid.',
     long_description=long_description,
     author='bung87',
